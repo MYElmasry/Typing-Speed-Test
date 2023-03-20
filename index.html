@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="game min-vh-100">
+      <div class="name text-white text-center fw-bold">Typing Speed Test</div>
+      <div class="container">
+        <div class="message bg-white rounded text-center">
+          You Are Playing On
+          <select
+            name="level"
+            id="level"
+            class="form-select d-inline-block select"
+          >
+            <option value="Easy">Easy</option>
+            <option value="Normal" selected>Normal</option>
+            <option value="Hard">Hard</option>
+          </select>
+          Level & You Have <span class="seconds fw-bold"></span> Seconds To Type
+          The Word
+        </div>
+        <div class="start fw-bold text-center text-white" role="button">
+          Start Playing
+        </div>
+        <div class="the-word text-center fw-bold"></div>
+        <input
+          type="text"
+          class="input w-100 fw-bold d-block text-center text-capitalize rounded"
+        />
+        <div
+          class="upcoming-words bg-white d-flex flex-wrap justify-content-center"
+        >
+          Words Will Show Here
+        </div>
+        <div class="control d-flex justify-content-between bg-white">
+          <div class="time">
+            Time Left: <span class="fw-bold"></span> Seconds
+          </div>
+          <div class="score">
+            Score: <span class="got fw-bold">0</span> From
+            <span class="total fw-bold"></span>
+          </div>
+        </div>
+        <div class="finish fw-bold text-center"></div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
